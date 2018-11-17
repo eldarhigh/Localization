@@ -1,0 +1,54 @@
+
+<script src="/scripts/jquery/jquery-3.3.1.min.js"></script>
+<script src="/scripts/plugins/slick/slick.min.js"></script>
+<script src="/scripts/plugins/autosize/jquery.textarea.autosize.min.js"></script>
+<script src="/scripts/plugins/in-view/in-view.min.js"></script>
+<script src="/scripts/interface.js"></script>
+
+<script>
+        $("#qbtform").submit(function(e) {
+            e.preventDefault();
+            var $form = $(this);
+
+            grecaptcha.ready(function() {
+              grecaptcha.execute('6LeFd3cUAAAAANtduyNbVRyrz4q18FzoiDWfdFWQ', {action: 'feedback'})
+              .then(function(token) {
+                var data = $form.serializeArray();
+                data.push({name: "gtoken", value: token});
+                $.post('/feedback', $.param(data))
+                .then(function() {
+                  $("#qbtform").hide()
+                  $("#qbtform").trigger('reset')
+                  $("#formsent").show();
+                }).catch(function(){
+                  $("#qbtform").hide()
+                  $("#qbtform").trigger('reset')
+                  $("#formerror").show();
+                });
+              });
+            });
+          });
+
+          $("#vacancy").submit(function(e) {
+            e.preventDefault();
+            var $form = $(this);
+
+            grecaptcha.ready(function() {
+              grecaptcha.execute('6LeFd3cUAAAAANtduyNbVRyrz4q18FzoiDWfdFWQ', {action: 'career'})
+              .then(function(token) {
+                var data = $form.serializeArray();
+                data.push({name: "gtoken", value: token});
+                $.post('/job', $.param(data))
+                .then(function() {
+                  $("#vacancy").hide()
+                  $("#vacancy").trigger('reset')
+                  $("#cvsent").show(); 
+                }).catch(function(){
+                  $("#vacancy").hide()
+                  $("#vacancy").trigger('reset')
+                  $("#cverror").show();
+                });
+              });
+            });
+          });
+</script>

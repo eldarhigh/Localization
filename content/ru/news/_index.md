@@ -1,4 +1,4 @@
 ---
 title: "Новости"
-layout: list
+layout: list-ru
 ---

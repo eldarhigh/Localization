@@ -1,4 +1,4 @@
 ---
 title: "Контакты"
-layout: single
+layout: single-ru
 ---

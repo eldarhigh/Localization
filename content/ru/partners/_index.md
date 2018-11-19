@@ -1,4 +1,4 @@
 ---
 title: "Партнеры"
-layout: single
+layout: single-ru
 ---

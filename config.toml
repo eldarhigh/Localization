@@ -21,22 +21,26 @@ defaultContentLanguageInSubdir = true
 
 
 [languages.en]
+  
   languageCode = "en"
   languageName = "English"
   contentDir = "content/en"
-  weight = 1
+  weight = 2
 
   [languages.en.params]
   address = "4 Shlyuzovaya Embankment 115114 Moscow, Russia"
   slogan_short = "We create a new digital environment for institutions and entire industries."
+  slogan_long = "We create a new digital environment for institutions and entire industries. We devise tokenomics of individual projects and create infrastructure and product solutions in the global technology market."
+  slogan_long_alter = "We create a new digital environment for institutions and entire industries. We devise tokenomics of individual projects and create infrastructure and product solutions in the global technology market."
   slogan_long_alter2 = "We create a new digital environment for institutions and entire industries. We devise tokenomics of individual projects and create infrastructure and product solutions in the global technology market."
 
 
 [languages.ru]
+  
   languageCode = "ru"
   languageName = "Russian"
   contentDir = "content/ru"
-  weight = 2
+  weight = 1
 
   [languages.ru.params]
   address = "Москва, Шлюзовая наб., д. 4"

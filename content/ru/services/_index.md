@@ -1,4 +1,4 @@
 ---
 title: "Услуги"
-layout: single
+layout: single-ru
 ---

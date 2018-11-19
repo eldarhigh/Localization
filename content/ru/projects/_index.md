@@ -1,4 +1,4 @@
 ---
 title: "Проекты"
-layout: list
+layout: list-ru
 ---

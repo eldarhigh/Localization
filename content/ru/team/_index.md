@@ -1,4 +1,4 @@
 ---
 title: "Команда"
-layout: single
+layout: single-ru
 ---

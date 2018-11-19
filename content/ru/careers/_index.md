@@ -1,4 +1,4 @@
 ---
 title: "Карьера"
-layout: list
+layout: list-ru
 ---

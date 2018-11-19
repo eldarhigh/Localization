@@ -1,4 +1,4 @@
 ---
 title: "О компании"
-layout: single
+layout: single-ru
 ---

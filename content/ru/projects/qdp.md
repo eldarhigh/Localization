@@ -1,4 +1,5 @@
 ---
+layout: single-ru
 title: "QDP"
 date: 2017-12-08T17:18:39+03:00
 tag: "type1"

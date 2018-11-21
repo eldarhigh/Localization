@@ -1,4 +1,5 @@
 ---
+layout: single-ru
 title: "Системный аналитик (blockchain)"
 description: "Выявление и анализ требований к blockchain системам"
 date: 2017-11-13T17:20:45+03:00

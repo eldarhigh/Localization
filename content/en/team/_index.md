@@ -1,4 +1,4 @@
 ---
-title: "Команда"
+title: "Team"
 layout: single
 ---
